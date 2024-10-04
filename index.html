@@ -8,6 +8,13 @@
     <meta name="keywords" content="java,html,css" />
     <meta name="author" content="Lakhini" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <!-- Main Root -->
@@ -15,51 +22,76 @@
     <!-- Sectioning Root -->
 
     <header>
-      <h1>Lakhini.</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-        </ul>
-      </nav>
+      <div class="logo-heading">
+        <h1>Lakhini <span>.</span></h1>
+      </div>
+      <div class="nav-heading">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="theme-icon">
+        <i class="fa-solid fa-moon" style="color: #ffffff"></i>
+      </div>
     </header>
 
     <!-- Content Sectioning -->
     <main>
       <!-- =========================================== Home ======================================================= -->
       <section id="home">
-        <h2>Hello! I'm Lakhini Voshadee</h2>
-        <p>Full Stack Web Developer | Web Developer | UI/UX Designer</p>
-
+        <div id="salutaion">
+          <h2>
+            Hello! <br />I'm
+            <span
+              >Lakhini <br />
+              Voshadee</span
+            >
+          </h2>
+          <p>Full Stack Web Developer | Web Developer | UI/UX Designer</p>
+        </div>
         <!-- Image and Multimedia -->
-        <img
-          src="assets/images/IMG-20240306-WA0049-Photoroom (1).png"
-          alt="Lakhini"
-        />
+        <div id="profile-pic">
+          <img
+            src="assets/images/IMG-20240306-WA0049-Photoroom (1).png"
+            alt="Lakhini"
+          />
+        </div>
         <br />
         <br />
-        <button><a href="#about">More about me</a></button>
+        <div class="home-btns">
+          <button><a href="#about">More about me</a></button>
 
-        <button><a href="#contact">Contact me</a></button>
+          <button><a href="#contact">Contact me</a></button>
+        </div>
         <br />
         <br />
         <!-- Embeded Content -->
-        <a href="https://github.com/LakhiniVoshadee" target="_blank">GitHub</a>
-        <br />
-        <a
-          href="https://www.facebook.com/profile.php?id=100090009402395"
-          target="_blank"
-          >Facebook</a
-        >
-        <br />
-        <a href="https://github.com/lakhini-voshadee" target="_blank"
-          >Instagram</a
-        >
-        <br />
-        <a href="https://www.linkedin.com/in/lakhini-voshadee/" target="_blank"
-          >LinkedIn</a
-        >
+        <div class="social-media">
+          <a href="https://github.com/LakhiniVoshadee" target="_blank"
+            >GitHub</a
+          >
+          <br />
+          <a
+            href="https://www.facebook.com/profile.php?id=100090009402395"
+            target="_blank"
+            >Facebook</a
+          >
+          <br />
+          <a href="https://github.com/lakhini-voshadee" target="_blank"
+            >Instagram</a
+          >
+          <br />
+          <a
+            href="https://www.linkedin.com/in/lakhini-voshadee/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
 
         <br />
       </section>
