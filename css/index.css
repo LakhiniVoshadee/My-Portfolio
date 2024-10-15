@@ -61,10 +61,36 @@ span {
   background-color: gray;
 }
 
+#hero-section {
+  width: 100%;
+  display: flex;
+  margin-top: 12px;
+}
+
+#hero-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 85px;
+}
+
+#back-slash {
+  letter-spacing: 20px;
+  margin-left: 20px;
+}
+#hero-image-sm {
+  width: 50%;
+}
+
+#hero-image-sm img {
+  width: 35vw;
+  height: 60vh;
+}
 #salutaion {
   color: white;
   font-size: 2.5rem;
-  padding-left: 50px;
+  padding-left: 44px;
 }
 
 #salutaion span {
@@ -75,21 +101,6 @@ span {
   font-size: 1rem;
 }
 
-#profile-pic {
-  width: 30vw;
-  height: 50vh;
-  background-color: #2f3534;
-  border-radius: 100%;
-  position: absolute;
-  left: 60%;
-  top: 20%;
-}
-
-#profile-pic img {
-  width: 30vw;
-  height: 40vh;
-}
-
 .home-btns {
   display: flex;
   justify-content: start;
@@ -98,10 +109,10 @@ span {
 }
 
 .home-btns button {
-  width: 15vw;
-  height: 8vh;
+  width: 12vw;
+  height: 6vh;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 8px;
   background-color: #1faea6;
   justify-content: space-between;
   margin-left: 20px;
