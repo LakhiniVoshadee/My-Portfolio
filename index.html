@@ -25,19 +25,14 @@
       <div class="logo-heading">
         <h1>Lakhini <span>.</span></h1>
       </div>
-      <div class="nav-heading">
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="theme-icon">
+      <nav>
+        <a id="abc" href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+      </nav>
+      <!-- <div class="theme-icon">
         <i class="fa-solid fa-moon" style="color: #ffffff"></i>
-      </div>
+      </div> -->
     </header>
 
     <!-- Content Sectioning -->
@@ -53,7 +48,10 @@
                 Voshadee</span
               >
             </h2>
-            <p>Full Stack Web Developer <span id="back-slash">/</span> Web Developer <span id="back-slash">/</span>UI/UX Designer</p>
+            <p>
+              Full Stack Web Developer <span id="back-slash">|</span> Web
+              Developer <span id="back-slash">|</span>UI/UX Designer
+            </p>
           </div>
           <div class="home-btns">
             <button><a href="#about">More about me</a></button>
@@ -64,10 +62,48 @@
 
         <div id="hero-image-sm">
           <!-- Image and Multimedia -->
-          <img src="/assets/images/IMG-20240306-WA0049-Photoroom (1).png" alt="profile-pic">
+          <div id="profile-circle">
+            <img
+              src="/assets/images/IMG-20240306-WA0049-Photoroom (1).png"
+              alt="profile-pic"
+              id="profile-img"
+            />
+          </div>
 
           <!-- Embeded Content -->
           <div class="social-media">
+            <!-- <a
+              href="https://www.linkedin.com/in/lakhini-voshadee/"
+              target="_blank"
+              ><img
+                src="/assets/images/linkedin (1).png"
+                alt="linkedin-logo"
+                class="sm-img"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/lakhini-voshadee/"
+              target="_blank"
+              ><img
+                src="/assets/images/facebook-circular-logo.png"
+                alt="facebook-logo"
+                class="sm-img"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/lakhini-voshadee/"
+              target="_blank"
+              ><img
+                src="/assets/images/instagram (1).png"
+                alt="instagram-logo"
+                class="sm-img"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/lakhini-voshadee/"
+              target="_blank"
+              ><img
+                src="/assets/images/github.png"
+                alt="github-logo"
+                class="sm-img"
+            /></a> -->
             <!-- <div class="sm-circle">
               <a href="https://github.com/LakhiniVoshadee" target="_blank"
                 ><img
@@ -109,90 +145,142 @@
               /></a>
             </div>
           </div> -->
+          </div>
         </div>
       </section>
 
       <!-- =========================================== About ================================================ -->
-      <section id="about">
+      <section id="about-section">
         <h1><b>About me</b></h1>
-        <h3>My Introduction</h3>
-        <p>
-          Hi there! I'm Lakhini Voshadee, a passionate [Your Profession, e.g.,
-          web developer, graphic designer] with a keen eye for detail and a love
-          for creating innovative solutions. With [X] years of experience in
-          [your field or industry], I have honed my skills in [mention key
-          skills or technologies]. My goal is to combine creativity and
-          technical expertise to deliver high-quality projects that exceed
-          expectations. When I'm not working, I enjoy [mention hobbies or
-          interests]. Let's connect and bring your ideas to life!
-        </p>
+        <div class="about-container">
+          <div id="about-left">
+            <div class="background-intro">
+              <h3>My Introduction</h3>
+              <p>
+                Hi there! I'm Lakhini Voshadee, a passionate [Your Profession,
+                e.g., web developer, graphic designer] with a keen eye for
+                detail and a love for creating innovative solutions. With [X]
+                years of experience in [your field or industry], I have honed my
+                skills in [mention key skills or technologies]. My goal is to
+                combine creativity and technical expertise to deliver
+                high-quality projects that exceed expectations. When I'm not
+                working, I enjoy [mention hobbies or interests]. Let's connect
+                and bring your ideas to life!
+              </p>
+            </div>
+          </div>
 
-        <br />
-        <h4><b>Frontend</b></h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-        <h4><b>Backend</b></h4>
-        <ul>
-          <li>NodeJS</li>
-          <li>JAVA</li>
-        </ul>
-        <h4><b>Database</b></h4>
-        <ul>
-          <li>MongoDB</li>
-          <li>MySQL</li>
-        </ul>
+          <div id="about-right">
+            <div class="about-content">
+              <div class="skills">
+                Frontend
+                <div class="skill-row">
+                  <div class="skill-box">HTML</div>
+                  <div class="skill-box">CSS</div>
+                  <div class="skill-box">JavaScript</div>
+                </div>
+              </div>
+              <div class="skills">
+                Backend
+                <div class="skill-row">
+                  <div class="skill-box">JAVA</div>
+                  <div class="skill-box">Node.js</div>
+                  <div class="skill-box">Python</div>
+                </div>
+              </div>
+              <div class="skills">
+                Database
+                <div class="skill-row">
+                  <div class="skill-box">MySQL</div>
+                  <div class="skill-box">MongoDB</div>
+                  <div class="skill-box">NoSQL</div>
+                </div>
+              </div>
+            </div>
 
-        <br />
-        <button>Download CV</button>
-
-        <h2>Education</h2>
-        <!-- inline text semantics  -->
-        <ul>
-          <li>
-            <b>Primary Education(2005-2010)</b><br />
-            Uyanwatta Model Primary School Matara.
-          </li>
-          <br />
-          <li>
-            <b>Al & Ol Education(2011-2019)</b><br />
-            St. Thomas' Girls' High School Matara.
-          </li>
-          <br />
-          <li>
-            <b>Extra</b><br />
-            American Corner Matara.
-          </li>
-          <br />
-          <li>
-            <b>Higher Education(2023-2025)</b><br />
-            Institute of Java and Software Engineering
-          </li>
-        </ul>
-        <h2>Experiences</h2>
-        <ul>
-          <li>
-            <b>Primary Education(2005-2010)</b><br />
-            Uyanwatta Model Primary School Matara.
-          </li>
-          <br />
-          <li>
-            <b>Primary Education(2005-2010)</b><br />
-            Uyanwatta Model Primary School Matara.
-          </li>
-          <br />
-          <li>
-            <b>Primary Education(2005-2010)</b><br />
-            Uyanwatta Model Primary School Matara.
-          </li>
-          <br />
-          <li>
-            <b>Primary Education(2005-2010)</b><br />
-            Uyanwatta Model Primary School Matara.
-          </li>
-        </ul>
+            <div id="cv-btn">
+              <button>
+                <img
+                  src="/assets/images/downloads.png"
+                  alt="downloads"
+                />Download CV
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <section id="edu-ex">
+        <div class="edu-ex-container">
+          <div id="education">
+            <h1 class="edu-ex-topic">Education</h1>
+            <div class="education-intro">
+              <div class="item">
+                <h3>Primary Education (2005-2010)</h3>
+                <p>Uyanwatta Model Primary School Matara</p>
+              </div>
+              <div class="item">
+                <h3>Primary Education (2005-2010)</h3>
+                <p>Uyanwatta Model Primary School Matara</p>
+              </div>
+              <div class="item">
+                <h3>Secondary Education (2010-2019)</h3>
+                <p>St. Thomas' Girls' High School Matara</p>
+              </div>
+            </div>
+          </div>
+          <div id="experience">
+            <h1 class="edu-ex-topic">Experiences</h1>
+            <div class="experience-intro"></div>
+          </div>
+        </div>
+      </section>
+
+      <h2>Education</h2>
+      <!-- inline text semantics  -->
+      <ul>
+        <li>
+          <b>Primary Education(2005-2010)</b><br />
+          Uyanwatta Model Primary School Matara.
+        </li>
+        <br />
+        <li>
+          <b>Al & Ol Education(2011-2019)</b><br />
+          St. Thomas' Girls' High School Matara.
+        </li>
+        <br />
+        <li>
+          <b>Extra</b><br />
+          American Corner Matara.
+        </li>
+        <br />
+        <li>
+          <b>Higher Education(2023-2025)</b><br />
+          Institute of Java and Software Engineering
+        </li>
+      </ul>
+      <h2>Experiences</h2>
+      <ul>
+        <li>
+          <b>Primary Education(2005-2010)</b><br />
+          Uyanwatta Model Primary School Matara.
+        </li>
+        <br />
+        <li>
+          <b>Primary Education(2005-2010)</b><br />
+          Uyanwatta Model Primary School Matara.
+        </li>
+        <br />
+        <li>
+          <b>Primary Education(2005-2010)</b><br />
+          Uyanwatta Model Primary School Matara.
+        </li>
+        <br />
+        <li>
+          <b>Primary Education(2005-2010)</b><br />
+          Uyanwatta Model Primary School Matara.
+        </li>
+      </ul>
 
       <!-- ================================================= Projects ================================================= -->
 
@@ -283,7 +371,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <p>Copyright© Lakhini Voshadee - All Rights Reserved.</p>
+      <p>Copyright© <span>Lakhini Voshadee</span> - All Rights Reserved.</p>
     </footer>
   </body>
 </html>
