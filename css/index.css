@@ -415,7 +415,7 @@ header nav a {
   color: rgb(201, 201, 201);
   font-size: 1.8rem;
   text-align: center;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .contact-container {
@@ -444,13 +444,18 @@ header nav a {
   padding-top: 95px;
   text-align: center;
   font-size: 2rem;
+  padding-bottom: 42px;
 }
 #find-me-box p {
   font-weight: 2px;
-  padding-top: 95px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #333333;
+}
+
+#find-me-box img {
+  width: 2vw;
+  height: 2vh;
 }
 #send {
   width: 50%;
@@ -459,6 +464,48 @@ header nav a {
   justify-content: center;
   align-items: center;
   padding: 0 85px;
+}
+#input-box {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 20px;
+}
+
+#send input {
+  width: 230px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #000000;
+  border: 1px solid white;
+}
+
+#send textarea {
+  margin-right: 45px;
+  width: 30vw;
+  border-radius: 15px;
+  background-color: #000000;
+  border: 1px solid white;
+  color: white;
+}
+#send button {
+  margin-right: 400px;
+  margin-top: 60px;
+  width: 10vw;
+  height: 6vh;
+  background-color: #222121;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+}
+
+#send button:hover {
+  background-color: #3b3b3b;
+  color: rgb(255, 255, 255);
+  border: 3px solid #3b3b3b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 footer {
   height: 35vh;
