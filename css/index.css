@@ -221,7 +221,7 @@ header h1 span {
 }
 
 .background-intro {
-  width: 26vw;
+  width: 25vw;
   height: 50vh;
   background-color: rgb(102, 99, 99);
   border-radius: 12px;
@@ -236,7 +236,7 @@ header h1 span {
 }
 .background-intro p {
   margin: 30px;
-  line-height: 20px;
+  line-height: 28px;
   font-size: 0.8rem;
 }
 
@@ -246,7 +246,7 @@ header h1 span {
   font-size: 2rem;
   display: flex;
   justify-content: space-evenly;
-  margin-left: 90px;
+  /* margin-left: 90px; */
 }
 
 .skills {
@@ -257,7 +257,7 @@ header h1 span {
 
 .skill-box {
   background-color: #1faea6;
-  width: 7vw;
+  width: 5vw;
   height: 5vh;
   font-size: 0.9rem;
   font-weight: bold;
@@ -321,7 +321,7 @@ header h1 span {
 }
 
 .education-intro {
-  width: 25vw;
+  width: 23vw;
   height: 70vh;
   background-color: rgb(102, 99, 99);
   border-radius: 12px;
@@ -337,14 +337,14 @@ header h1 span {
 }
 
 .experience-intro {
-  width: 25vw;
+  width: 23vw;
   height: 70vh;
   background-color: rgb(102, 99, 99);
   border-radius: 12px;
   text-align: center;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: 90px;
+  /* margin-left: 90px; */
 }
 
 .item {
@@ -437,12 +437,8 @@ header h1 span {
   height: 2vh;
 }
 
-#send {
-  margin-left: 90px;
-}
-
 #send input {
-  width: 25vw;
+  width: 22vw;
   height: 7vh;
   border-radius: 15px;
   background-color: #000000;
@@ -450,7 +446,7 @@ header h1 span {
 }
 
 #send textarea {
-  width: 25vw;
+  width: 22vw;
   height: 23vh;
   border-radius: 15px;
   background-color: #000000;
