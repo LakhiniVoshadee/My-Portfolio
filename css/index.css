@@ -562,7 +562,8 @@ footer p span {
   }
   .home-btns button {
     width: 25vw;
-    margin-right: 40px;
+    margin-right: 3em;
+    margin-left: 4em;
   }
 
   .about-container {
@@ -575,7 +576,17 @@ footer p span {
     align-items: center;
     justify-content: center;
   }
+  #salutaion h2 {
+    margin-left: 3em;
+  }
 
+  #salutaion h1 {
+    margin-left: 4em;
+  }
+  #salutaion p {
+    font-size: 0.8rem;
+    margin-left: 4em;
+  }
   .background-intro {
     width: 62vw;
     height: 43vh;
@@ -601,6 +612,37 @@ footer p span {
     margin-left: 138px;
   }
 
+  .projects-container {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .education-intro {
+    width: 35vw;
+    margin-left: 1em;
+  }
+
+  .experience-intro {
+    width: 35vw;
+    margin-left: 2em;
+  }
+
+  #find-me-box {
+    width: 43vw;
+    height: 42vh;
+  }
+  #find-me-box p {
+    font-size: 1rem;
+  }
+  #send {
+    margin-left: 1em;
+  }
+
+  #send input {
+    width: 38vw;
+  }
+  #send textarea {
+    width: 38vw;
+  }
   /* ------------Header------------ */
   /* .nav-links {
     display: none;
