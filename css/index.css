@@ -191,10 +191,10 @@ header h1 span {
 }
 
 .social-media .icon {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #ffffff;
   padding: 10px;
-  background-color: #333;
+  background-color: #252525;
   border-radius: 15px;
 }
 
@@ -514,11 +514,95 @@ footer p span {
   color: #1faea6;
 }
 
+@media (max-width: 990px) {
+  .content {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 /* =============================== Tab Type Devices =================================================== */
 
 @media screen and (max-width: 768px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .nav {
+    padding: 12px 0;
+  }
+
+  .home {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+  }
+  .home-container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-btns {
+    margin-top: 60px;
+  }
+
+  #profile-img {
+    height: 365px;
+    margin-bottom: 3em;
+  }
+  .home-btns button {
+    width: 25vw;
+    margin-right: 40px;
+  }
+
+  .about-container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background-intro {
+    width: 62vw;
+    height: 43vh;
+  }
+
+  .background-intro p {
+    line-height: 23px;
+  }
+
+  .about-content {
+    margin-left: 0;
+  }
+
+  .skill-box {
+    width: 15vw;
+  }
+
+  #cv-btn button {
+    width: 25vw;
+  }
+
+  #cv-btn {
+    margin-left: 138px;
+  }
+
   /* ------------Header------------ */
-  .nav-links {
+  /* .nav-links {
     display: none;
   }
 
@@ -532,11 +616,11 @@ footer p span {
 
   .menu-panel.active {
     right: 0;
-  }
+  } */
 
   /* ---------- About Me ------------ */
 
-  #about-section h1 {
+  /* #about-section h1 {
     margin-left: 265px;
   }
 
@@ -586,11 +670,11 @@ footer p span {
     width: 20vw;
     height: 8vh;
     margin-left: 75px;
-  }
+  } */
 
   /* ------- Education & Experinces --------- */
 
-  #edu-ex {
+  /* #edu-ex {
     display: flex;
     align-items: center;
   }
@@ -621,7 +705,7 @@ footer p span {
 
   .item p {
     font-size: 0.9rem;
-  }
+  } */
 
   /* ---------- Projects ------------------- */
 }
