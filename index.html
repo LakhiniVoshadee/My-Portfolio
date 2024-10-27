@@ -7,13 +7,20 @@
     <meta name="description" content="My Portfolio" />
     <meta name="keywords" content="java,html,css" />
     <meta name="author" content="Lakhini" />
-    <title>My Portfolio</title>
+    <title>Lakhini's Portfolio</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
 
@@ -22,135 +29,85 @@
     <!-- Sectioning Root -->
 
     <header>
-      <div class="logo-heading">
-        <h1>Lakhini <span>.</span></h1>
+      <div class="nav content">
+        <div class="logo-heading">
+          <h1>Lakhini <span>.</span></h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+          </ul>
+
+          <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+        </nav>
       </div>
-      <nav>
-        <a id="abc" href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-      </nav>
-      <!-- <div class="theme-icon">
-        <i class="fa-solid fa-moon" style="color: #ffffff"></i>
-      </div> -->
     </header>
+
+    <div class="menu-panel" id="menu-panel-id">
+      <button class="close-btn" id="btn-close">&times;</button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
 
     <!-- Content Sectioning -->
     <main>
       <!-- =========================================== Home ======================================================= -->
-      <section id="hero-section">
-        <div id="hero-content">
-          <div id="salutaion">
-            <h2>
-              Hello! <br />I'm
-              <span
-                >Lakhini <br />
-                Voshadee</span
-              >
-            </h2>
-            <p>
-              Full Stack Web Developer <span id="back-slash">|</span> Web
-              Developer <span id="back-slash">|</span>UI/UX Designer
-            </p>
-          </div>
-          <div class="home-btns">
-            <button><a href="#about">More about me</a></button>
+      <section id="hero-section" class="home content">
+        <div class="home-container">
+          <div id="hero-content">
+            <div id="salutaion">
+              <h2>
+                Hello! <br />I'm
+                <span
+                  >Lakhini <br />
+                  Voshadee</span
+                >
+              </h2>
+              <p>
+                Full Stack Web Developer <span id="back-slash">|</span> Web
+                Developer <span id="back-slash">|</span>UI/UX Designer
+              </p>
+            </div>
+            <div class="home-btns">
+              <button><a href="#about-section">More about me</a></button>
 
-            <button><a href="#contact">Contact me</a></button>
+              <button><a href="#contact-section">Contact me</a></button>
+            </div>
           </div>
-        </div>
 
-        <div id="hero-image-sm">
-         
+          <div id="hero-image-sm">
             <img
               src="/assets/images/IMG-20240306-WA0049-Photoroom (1).png"
               alt="profile-pic"
               id="profile-img"
             />
-         
 
-          <!-- Embeded Content -->
-          <div class="social-media">
-            <!-- <a
-              href="https://www.linkedin.com/in/lakhini-voshadee/"
-              target="_blank"
-              ><img
-                src="/assets/images/linkedin (1).png"
-                alt="linkedin-logo"
-                class="sm-img"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/lakhini-voshadee/"
-              target="_blank"
-              ><img
-                src="/assets/images/facebook-circular-logo.png"
-                alt="facebook-logo"
-                class="sm-img"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/lakhini-voshadee/"
-              target="_blank"
-              ><img
-                src="/assets/images/instagram (1).png"
-                alt="instagram-logo"
-                class="sm-img"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/lakhini-voshadee/"
-              target="_blank"
-              ><img
-                src="/assets/images/github.png"
-                alt="github-logo"
-                class="sm-img"
-            /></a> -->
-            <!-- <div class="sm-circle">
-              <a href="https://github.com/LakhiniVoshadee" target="_blank"
-                ><img
-                  src="/assets/images/linkedin.png"
-                  alt="linkedin"
-                  class="sm-img"
-              /></a>
+            <!-- Embeded Content -->
+            <div class="social-media">
+              <a href="https://www.linkedin.com/in/lakhini-voshadee/"
+                ><i class="icon fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/LakhiniVoshadee"
+                ><i class="icon fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.facebook.com/profile.php?id=100090009402395"
+                ><i class="icon fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="#"><i class="icon fa-brands fa-square-instagram"></i></a>
             </div>
-            <br />
-            <div class="sm-circle">
-              <a href="https://github.com/LakhiniVoshadee" target="_blank">
-                <img
-                  src="/assets/images/facebook.png"
-                  alt="facebook"
-                  class="sm-img"
-                />
-              </a>
-            </div>
-            <br />
-            <div class="sm-circle">
-              <a href="https://github.com/lakhini-voshadee" target="_blank">
-                <img
-                  src="/assets/images/instagram.png"
-                  alt="instagram"
-                  class="sm-circle"
-                />
-              </a>
-            </div>
-            <br />
-            <div class="sm-circle">
-              <a
-                href="https://www.linkedin.com/in/lakhini-voshadee/"
-                target="_blank"
-              >
-                <img
-                  src="/assets/images/github.png"
-                  alt="github"
-                  class="sm-circle"
-              /></a>
-            </div>
-          </div> -->
           </div>
         </div>
       </section>
 
       <!-- =========================================== About ================================================ -->
-      <section id="about-section">
-        <h1><b>About me</b></h1>
+      <section id="about-section" class="about content">
+        <h1 class="heading"><b>About me</b></h1>
         <div class="about-container">
           <div id="about-left">
             <div class="background-intro">
@@ -209,7 +166,9 @@
         </div>
       </section>
 
-      <section id="edu-ex">
+      <!-- ============================================== Education & Experiences ======================================== -->
+
+      <section id="edu-ex-section" class="edu-ex content">
         <div class="edu-ex-container">
           <div id="education">
             <h1 class="edu-ex-topic">Education</h1>
@@ -219,16 +178,16 @@
                 <p>Uyanwatta Model Primary School Matara</p>
               </div>
               <div class="item">
-                <h3>Primary Education (2005-2010)</h3>
-                <p>Uyanwatta Model Primary School Matara</p>
-              </div>
-              <div class="item">
                 <h3>Secondary Education (2010-2019)</h3>
                 <p>St. Thomas' Girls' High School Matara</p>
               </div>
               <div class="item">
-                <h3>Secondary Education (2010-2019)</h3>
-                <p>St. Thomas' Girls' High School Matara</p>
+                <h3>English & Soft skills</h3>
+                <p>American Corner Matara</p>
+              </div>
+              <div class="item">
+                <h3>Higher Studies</h3>
+                <p>Institute of Java and Software Enginerring</p>
               </div>
               <div class="item">
                 <h3>Secondary Education (2010-2019)</h3>
@@ -240,24 +199,27 @@
             <h1 class="edu-ex-topic">Experiences</h1>
             <div class="experience-intro">
               <div class="item">
-                <h3>Primary Education (2005-2010)</h3>
+                <h3>Volunteer Work</h3>
+                <p>American Corner Matara</p>
+              </div>
+              <div class="item">
+                <h3>Leadership Experience</h3>
                 <p>Uyanwatta Model Primary School Matara</p>
               </div>
               <div class="item">
-                <h3>Primary Education (2005-2010)</h3>
-                <p>Uyanwatta Model Primary School Matara</p>
+                <h3>Internships</h3>
+                <p>Completed a 3-month internship at XYZ Company</p>
               </div>
               <div class="item">
-                <h3>Secondary Education (2010-2019)</h3>
-                <p>St. Thomas' Girls' High School Matara</p>
+                <h3>Academic Projects</h3>
+                <p>
+                  Developed a web application as part of a computer science
+                  course project.
+                </p>
               </div>
               <div class="item">
-                <h3>Secondary Education (2010-2019)</h3>
-                <p>St. Thomas' Girls' High School Matara</p>
-              </div>
-              <div class="item">
-                <h3>Secondary Education (2010-2019)</h3>
-                <p>St. Thomas' Girls' High School Matara</p>
+                <h3>Skills Development</h3>
+                <p>Learned advanced JavaScript frameworks like</p>
               </div>
             </div>
           </div>
@@ -266,8 +228,10 @@
 
       <!-- ================================================= Projects ================================================= -->
 
-      <section id="projects-section">
-        <h1><b>Projects <span> & </span>Certificates</b></h1>
+      <section id="projects-section" class="projects content">
+        <h1 class="heading">
+          <b>Projects</b>
+        </h1>
 
         <!-- Embeded Content -->
         <div class="projects-container">
@@ -279,7 +243,10 @@
             <h2>Cetificates</h2>
             <p>5+ Cetificates</p>
           </div>
-          <div class="project-box"></div>
+          <div class="project-box">
+            <h2>Website Developed</h2>
+            <p>2+ Websites</p>
+          </div>
         </div>
 
         <!-- <a
@@ -311,14 +278,16 @@
 
       <!-- =================================================== Contact ================================================ -->
 
-      <section id="contact-section">
-        <h1><b>Get in touch</b></h1>
+      <section id="contact-section" class="contact content">
+        <h1 class="heading"><b>Get in touch</b></h1>
         <p>Do you have a project in you mind,contact me here</p>
 
         <div class="contact-container">
           <div id="find-me">
             <div id="find-me-box">
               <h2>Find me</h2>
+              <p>Email:lakhinivoshadee24@gmail.com</p>
+              <p>Tel:0775279595</p>
               <!-- <img src="/assets/images/envelope.png" alt="email" />
               <p>Email:lakhinivoshadee24@gmail.com</p>
               <img src="/assets/images/phone-call.png" alt="phone-call" />
