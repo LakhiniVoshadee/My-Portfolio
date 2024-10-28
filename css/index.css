@@ -205,7 +205,7 @@ header h1 span {
 }
 
 .social-media .icon:hover {
-  background: #252525;
+  background: #444444;
   transition: 0.3s all linear;
 }
 .sm-img {
@@ -705,7 +705,6 @@ footer p span {
   }
 
   .home-btns button {
-    /* padding: 0px; */
     font-size: 0.2rem;
   }
 
