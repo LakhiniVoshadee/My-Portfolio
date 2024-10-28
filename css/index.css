@@ -76,6 +76,7 @@ header h1 span {
   top: 0;
   right: -100%;
   transition: right 0.4s ease;
+  z-index: 200;
 }
 
 .menu-panel ul {
@@ -275,6 +276,34 @@ header h1 span {
 
 #cv-btn {
   display: block;
+  margin-left: 160px;
+  margin-top: 50px;
+}
+.cv-btn {
+  font-size: 1rem;
+  background-color: #222121;
+  display: inline-flex;
+  border-radius: 8px;
+  padding: 12px 15px;
+  color: white;
+  text-decoration: none;
+  column-gap: 1em;
+  transition: ease 0.5s;
+}
+
+.cv-btn .fa {
+  font-size: 1.1rem;
+}
+
+.cv-btn:hover {
+  transform: scale(1.2);
+  transition: ease 0.5s;
+  cursor: pointer;
+  background-color: #3b3b3b;
+}
+
+/* #cv-btn {
+  display: block;
   margin-left: 210px;
   margin-top: 50px;
 }
@@ -305,7 +334,7 @@ header h1 span {
   border: 3px solid #3b3b3b;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 
 /* ============================ Education & Experiences ============================================== */
 
@@ -628,10 +657,10 @@ footer p span {
   }
 
   #send input {
-    width: 38vw;
+    /* width: 38vw; */
   }
   #send textarea {
-    width: 38vw;
+    /* width: 38vw; */
   }
 }
 

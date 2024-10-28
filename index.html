@@ -52,9 +52,9 @@
     <div class="menu-panel" id="menu-panel-id">
       <button class="close-btn" id="btn-close">&times;</button>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="#hero-section">Home</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
       </ul>
     </div>
 
@@ -112,15 +112,14 @@
             <div class="background-intro">
               <h3>My Introduction</h3>
               <p>
-                Hi there! I'm Lakhini Voshadee, a passionate [Your Profession,
-                e.g., web developer, graphic designer] with a keen eye for
-                detail and a love for creating innovative solutions. With [X]
-                years of experience in [your field or industry], I have honed my
-                skills in [mention key skills or technologies]. My goal is to
-                combine creativity and technical expertise to deliver
-                high-quality projects that exceed expectations. When I'm not
-                working, I enjoy [mention hobbies or interests]. Let's connect
-                and bring your ideas to life!
+                Hi there! I'm Lakhini Voshadee, a passionate web developer,
+                graphic designer with a keen eye for detail and a love for
+                creating innovative solutions. With 1 year of experience in
+                IJSE, I have honed my skills in [mention key skills or
+                technologies]. My goal is to combine creativity and technical
+                expertise to deliver high-quality projects that exceed
+                expectations. When I'm not working, I enjoy web developing.
+                Let's connect and bring your ideas to life!
               </p>
             </div>
           </div>
@@ -154,12 +153,12 @@
             </div>
 
             <div id="cv-btn">
-              <button>
-                <img
-                  src="/assets/images/downloads.png"
-                  alt="downloads"
-                />Download CV
-              </button>
+              <a
+                href="/assets/pdf/Professional CV Resume.pdf"
+                download
+                class="cv-btn"
+                ><i class="fa fa-solid fa-download"></i>Download CV
+              </a>
             </div>
           </div>
         </div>
@@ -274,14 +273,12 @@
               />
               <input type="email" placeholder="Email" class="email" required />
 
-              <br />
-              <br />
               <textarea
                 name="message"
                 id="message"
                 placeholder="Enter your message"
                 cols="30"
-                rows="10"
+                rows="14"
                 class="message"
                 required
               ></textarea>
