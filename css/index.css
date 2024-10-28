@@ -472,7 +472,6 @@ header h1 span {
 
 /* =================================================== Footer =================================================== */
 footer {
-  width: auto;
   background-color: #101249;
   text-align: center;
   padding: 30px;
@@ -654,7 +653,7 @@ footer p span {
   }
 
   footer nav a {
-    margin: 0 40px;
+    margin: 0 20px;
   }
 }
 
@@ -731,5 +730,16 @@ footer p span {
   }
   .education-intro {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  #salutaion h2 {
+    margin-left: 2em;
+    font-size: 2rem;
+  }
+  #salutaion h1 {
+    margin-left: 1.5em;
+    /* font-size: 0.9rem; */
   }
 }
