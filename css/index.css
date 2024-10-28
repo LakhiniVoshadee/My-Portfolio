@@ -8,7 +8,7 @@
 
 body {
   background-color: black;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
@@ -60,6 +60,17 @@ header h1 span {
   text-decoration: none;
 }
 
+.links {
+  font-size: 0.94rem;
+  padding: 5px 8px;
+  border-radius: 0.2rem;
+}
+
+.links:hover {
+  color: white;
+  background: #333;
+  transition: 0.3s all linear;
+}
 #burger {
   display: none;
   color: white;
@@ -155,8 +166,6 @@ header h1 span {
 }
 
 .home-btns button {
-  /* width: 10vw;
-  height: 6vh; */
   padding: 20px;
   border: 1px solid black;
   border-radius: 8px;
@@ -191,13 +200,23 @@ header h1 span {
   font-size: 1.4rem;
   color: #ffffff;
   padding: 10px;
-  background-color: #252525;
+  background-color: black;
   border-radius: 15px;
 }
 
+.social-media .icon:hover {
+  background: #252525;
+  transition: 0.3s all linear;
+}
 .sm-img {
-  width: 4vw;
-  height: 4vh;
+  width: 4rem;
+  height: 4rem;
+  transition: ease 0.5s;
+}
+
+.sm-img:hover {
+  transition: ease 0.5s;
+  transform: scale(1.2);
 }
 
 /* Heading */
@@ -302,40 +321,6 @@ header h1 span {
   background-color: #3b3b3b;
 }
 
-/* #cv-btn {
-  display: block;
-  margin-left: 210px;
-  margin-top: 50px;
-}
-
-#cv-btn button {
-  padding: 20px;
-  background-color: #222121;
-  color: white;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-}
-
-#cv-btn:hover {
-  transition: 0.3s all linear;
-}
-#cv-btn button img {
-  width: 18px;
-  height: 18px;
-  margin-right: 20px;
-  margin-top: 3px;
-}
-
-#cv-btn button:hover {
-  background-color: #3b3b3b;
-  color: rgb(255, 255, 255);
-  border: 3px solid #3b3b3b;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-} */
-
 /* ============================ Education & Experiences ============================================== */
 
 .edu-ex-container {
@@ -394,7 +379,7 @@ header h1 span {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .project-box {
@@ -404,13 +389,13 @@ header h1 span {
   background-color: #1faea6;
   border-radius: 0.4rem;
   text-align: center;
-  padding: 15px;
-  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding: 65px;
+  transition: ease 0.5s;
 }
 
 .project-box:hover {
-  transform: scale(1.05);
-  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: ease 0.5s;
+  transform: scale(1.2);
 }
 
 .project-box h2 {
@@ -492,18 +477,19 @@ header h1 span {
   cursor: pointer;
   border: none;
   border-radius: 15px;
+  transition: ease 0.5s;
 }
 
 #send button:hover {
   background-color: #3b3b3b;
-  transition: 0.3s all linear;
+  transition: ease 0.5s;
+  transform: scale(1.2);
 }
 
 /* =================================================== Footer =================================================== */
 footer {
   background-color: #101249;
   text-align: center;
-  padding: 30px;
 }
 
 footer h2 {
@@ -535,6 +521,17 @@ footer p {
 
 footer p span {
   color: #1faea6;
+}
+
+.f-links {
+  font-size: 0.94rem;
+  padding: 5px 8px;
+  border-radius: 0.2rem;
+}
+
+.f-links:hover {
+  color: rgb(104, 104, 104);
+  transition: 0.3s all linear;
 }
 
 @media (max-width: 990px) {
@@ -770,5 +767,9 @@ footer p span {
   #salutaion h1 {
     margin-left: 1.5em;
     /* font-size: 0.9rem; */
+  }
+
+  #salutaion p {
+    margin-left: 6em;
   }
 }
