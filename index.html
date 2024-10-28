@@ -39,11 +39,10 @@
         <!-- Navbar -->
         <nav>
           <ul class="nav-links">
-            <li><a href="#hero-section">Home</a></li>
-            <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="#hero-section" class="links">Home</a></li>
+            <li><a href="#projects-section" class="links">Projects</a></li>
+            <li><a href="#resume" class="links">Resume</a></li>
           </ul>
-
           <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
         </nav>
       </div>
@@ -54,9 +53,8 @@
       <button class="close-btn" id="btn-close">&times;</button>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resume</a></li>
       </ul>
     </div>
 
@@ -249,32 +247,6 @@
             <p>2+ Websites</p>
           </div>
         </div>
-
-        <!-- <a
-          href="https://github.com/LakhiniVoshadee/Project_TheDaleVilla_Layered"
-        >
-          <img
-            src="assets/images/Screenshot 2024-09-04 110436.png"
-            alt="Layered Architecture"
-            style="width: 500px; height: 400px"
-          />
-        </a>
-
-        <a href="https://github.com/LakhiniVoshadee/Food-Recipes-Website">
-          <img
-            src="assets/images/Screenshot 2024-09-04 110803.png"
-            alt="Food Recipie Site"
-            style="width: 500px; height: 400px"
-          />
-        </a>
-
-        <a href="https://github.com/LakhiniVoshadee/connect-four-game-Lakhini">
-          <img
-            src="assets/images/Screenshot 2024-09-04 112000.png"
-            alt="Connect 4 Game"
-            style="width: 500px; height: 400px"
-          />
-        </a> -->
       </section>
 
       <!-- =================================================== Contact ================================================ -->
@@ -289,35 +261,36 @@
               <h2>Find me</h2>
               <p>Email:lakhinivoshadee24@gmail.com</p>
               <p>Tel:0775279595</p>
-              <!-- <img src="/assets/images/envelope.png" alt="email" />
-              <p>Email:lakhinivoshadee24@gmail.com</p>
-              <img src="/assets/images/phone-call.png" alt="phone-call" />
-              <p>Tel:0775279595</p> -->
             </div>
           </div>
           <!-- Forms -->
           <div id="send">
-            <div id="input-box">
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
-            </div>
+            <form action="" class="contact-form" id="contact-form">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="name"
+                required
+              />
+              <input type="email" placeholder="Email" class="email" required />
 
-            <br />
-            <br />
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Enter your message"
-              cols="50"
-              rows="10"
-            ></textarea>
-            <br />
-            <br />
-            <button>Send</button>
+              <br />
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter your message"
+                cols="30"
+                rows="10"
+                class="message"
+                required
+              ></textarea>
+              <br />
+              <br />
+              <button>Send</button>
+            </form>
           </div>
         </div>
-
-        <br />
       </section>
     </main>
     <!-- Footer -->
@@ -334,5 +307,19 @@
       </nav>
       <p>Copyright© <span>Lakhini Voshadee</span> - All Rights Reserved.</p>
     </footer>
+
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+
+      burger.addEventListener("click", () => {
+        menuPanel.classList.toggle("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
   </body>
 </html>

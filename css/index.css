@@ -104,11 +104,6 @@ header h1 span {
   right: 20px;
 }
 
-#abc:hover {
-  color: gray;
-  transform: scale();
-}
-
 /* ================================ Home ============================================== */
 .home {
   padding-top: 15rem;
@@ -159,8 +154,9 @@ header h1 span {
 }
 
 .home-btns button {
-  width: 10vw;
-  height: 6vh;
+  /* width: 10vw;
+  height: 6vh; */
+  padding: 20px;
   border: 1px solid black;
   border-radius: 8px;
   background-color: #1faea6;
@@ -221,8 +217,8 @@ header h1 span {
 }
 
 .background-intro {
-  width: 25vw;
-  height: 50vh;
+  /* width: 25vw;
+  height: 50vh; */
   background-color: rgb(102, 99, 99);
   border-radius: 12px;
   text-align: center;
@@ -256,8 +252,9 @@ header h1 span {
 
 .skill-box {
   background-color: #1faea6;
-  width: 5vw;
-  height: 5vh;
+  /* width: 5vw;
+  height: 5vh; */
+  padding: 20px;
   font-size: 0.9rem;
   font-weight: bold;
   color: black;
@@ -283,8 +280,7 @@ header h1 span {
 }
 
 #cv-btn button {
-  width: 12vw;
-  height: 7vh;
+  padding: 20px;
   background-color: #222121;
   color: white;
   border-radius: 10px;
@@ -320,13 +316,14 @@ header h1 span {
 }
 
 .education-intro {
-  width: 23vw;
-  height: 70vh;
+  width: 300px;
+  height: 700px;
   background-color: rgb(102, 99, 99);
   border-radius: 12px;
   text-align: center;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 .edu-ex-topic {
@@ -336,13 +333,14 @@ header h1 span {
 }
 
 .experience-intro {
-  width: 23vw;
-  height: 70vh;
+  width: 300px;
+  height: 700px;
   background-color: rgb(102, 99, 99);
   border-radius: 12px;
   text-align: center;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
   /* margin-left: 90px; */
 }
 
@@ -405,16 +403,17 @@ header h1 span {
 
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
 }
 
 #find-me-box {
-  width: 28vw;
-  height: 40vh;
+  width: 566px;
   background-color: #1faea6;
-  border-radius: 15px;
+  border-radius: 10px;
   align-items: center;
+  padding: 5px;
+  margin: 0 auto;
 }
 
 #find-me-box h2 {
@@ -436,22 +435,22 @@ header h1 span {
   height: 2vh;
 }
 
-#send input {
-  width: 22vw;
-  height: 7vh;
-  border-radius: 15px;
-  background-color: #000000;
-  border: 1px solid white;
+#contact-form {
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  row-gap: 1.5rem;
 }
 
-#send textarea {
-  width: 22vw;
-  height: 23vh;
+.contact-form input,
+.contact-form textarea {
   border-radius: 15px;
   background-color: #000000;
   border: 1px solid white;
-  color: white;
+  padding: 15px;
 }
+
 #send button {
   background-color: #222121;
   color: white;
@@ -470,8 +469,9 @@ header h1 span {
   background-color: #3b3b3b;
   transition: 0.3s all linear;
 }
+
+/* =================================================== Footer =================================================== */
 footer {
-  height: 35vh;
   width: auto;
   background-color: #101249;
   text-align: center;
@@ -530,6 +530,17 @@ footer p span {
     padding: 12px 0;
   }
 
+  .nav-links {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+  }
+
+  .menu-panel.active {
+    right: 0;
+  }
   .home {
     min-height: 600px;
     display: flex;
@@ -556,7 +567,6 @@ footer p span {
     margin-bottom: 3em;
   }
   .home-btns button {
-    width: 25vw;
     margin-right: 3em;
     margin-left: 4em;
   }
@@ -582,10 +592,6 @@ footer p span {
     font-size: 0.8rem;
     margin-left: 4em;
   }
-  .background-intro {
-    width: 62vw;
-    height: 43vh;
-  }
 
   .background-intro p {
     line-height: 23px;
@@ -595,13 +601,9 @@ footer p span {
     margin-left: 0;
   }
 
-  .skill-box {
-    width: 15vw;
-  }
-
-  #cv-btn button {
+  /* #cv-btn button {
     width: 25vw;
-  }
+  } */
 
   #cv-btn {
     margin-left: 138px;
@@ -612,19 +614,13 @@ footer p span {
     margin-right: 2em;
   }
   .education-intro {
-    width: 35vw;
     margin-left: 1em;
   }
 
   .experience-intro {
-    width: 35vw;
     margin-left: 2em;
   }
 
-  #find-me-box {
-    width: 43vw;
-    height: 42vh;
-  }
   #find-me-box p {
     font-size: 1rem;
   }
@@ -638,111 +634,102 @@ footer p span {
   #send textarea {
     width: 38vw;
   }
-  /* ------------Header------------ */
-  /* .nav-links {
-    display: none;
-  }
+}
 
-  .logo-container > h2 {
-    display: none;
-  }
+/* ========================================== Laptop Type Devices ========================================================= */
 
-  .burger {
-    display: block;
-  }
+/* ========================================== Mobile Type Devices ================================================== */
 
-  .menu-panel.active {
-    right: 0;
-  } */
-
-  /* ---------- About Me ------------ */
-
-  /* #about-section h1 {
-    margin-left: 265px;
-  }
-
-  .about-container {
-    flex-direction: column;
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  #about-left {
-    margin-bottom: 65px;
-    margin-left: 265px;
-    width: 65vw;
-  }
-
-  .background-intro {
-    height: 60vh;
-    width: 65vw;
-  }
-
-  .background-intro h3 {
-    margin-top: 40px;
-  }
-
-  .background-intro p {
-    margin: 45px;
-    line-height: 35px;
-    font-size: 1.1rem;
-  }
-
-  #about-right {
-    margin-bottom: 65px;
-    margin-left: 265px;
-    width: 65vw;
-  }
-
-  .skills {
-    font-size: 1.8rem;
-  }
-
-  .skill-box {
-    width: 12vw;
-    height: 7vh;
-  }
-
-  #cv-btn button {
-    width: 20vw;
-    height: 8vh;
-    margin-left: 75px;
-  } */
-
-  /* ------- Education & Experinces --------- */
-
-  /* #edu-ex {
-    display: flex;
-    align-items: center;
-  }
+@media screen and (max-width: 615px) {
   .edu-ex-container {
-    width: 100vw;
+    grid-template-columns: repeat(1, 1fr);
   }
+
   #education {
-    margin-left: 115px;
+    margin: 0 auto;
   }
 
   #experience {
-    margin-left: 50px;
+    margin: 0 auto;
   }
-  .education-intro {
-    width: 40vw;
-    height: 70vh;
+
+  footer nav a {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  footer nav a {
+    margin: 0 18px;
+  }
+
+  .heading {
+    font-size: 2.8rem;
+  }
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #find-me-box {
+    width: 400px;
+  }
+  .skill-box {
+    padding: 10px;
+  }
+
+  .skills {
+    font-size: 1rem;
+  }
+  .background-intro {
+    padding: 10px;
+  }
+  #salutaion h1 {
+    margin-left: 2em;
+  }
+
+  #salutaion h2 {
+    margin-left: 1em;
+  }
+  #salutaion p {
+    font-size: 0.5rem;
+    margin-left: 1em;
+  }
+
+  .home-btns button {
+    /* padding: 0px; */
+    font-size: 0.2rem;
+  }
+
+  #contact-section p {
+    font-size: 0.9rem;
+  }
+  #find-me-box {
+    width: 340px;
+  }
+  #cv-btn button {
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .skill-box {
+    padding: 5px;
+    font-size: 0.6rem;
+  }
+  #cv-btn {
+    margin-left: 70px;
+  }
+
+  #find-me-box {
+    width: 300px;
+  }
+  .background-intro {
+    padding: 5px;
   }
 
   .experience-intro {
-    width: 40vw;
-    height: 70vh;
+    margin-left: 0;
   }
-
-  .item h3 {
-    margin: 15px;
-    font-size: 1.1rem;
+  .education-intro {
+    margin-left: 0;
   }
-
-  .item p {
-    font-size: 0.9rem;
-  } */
-
-  /* ---------- Projects ------------------- */
 }
